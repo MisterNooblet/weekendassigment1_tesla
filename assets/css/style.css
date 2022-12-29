@@ -15,6 +15,9 @@
   font-weight: normal;
   font-style: normal;
 }
+html:focus-within {
+  scroll-behavior: smooth;
+}
 .clear {
   clear: both;
 }
@@ -33,6 +36,24 @@ h3 {
   background-position: center;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+#background2{
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 100vh;
+  position: absolute;
+}
+#bgimg {
+  background-image: url("/assets/images/secondbg.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 78vw;
+  height: 100vh;
+  top: 100vh;
   z-index: -1;
   position: absolute;
 }
@@ -121,8 +142,6 @@ a {
   width: 100%;
 }
 body {
-  height: 4000px;
-  overflow: hidden;
 }
 #infoone.infocontainer {
   color: #fff;
