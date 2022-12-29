@@ -14,8 +14,9 @@
   font-family: "gothamssmmedium", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
+  line-height: 20px;
 }
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 .clear {
@@ -46,21 +47,7 @@ h3 {
   top: 100vh;
   position: absolute;
 }
-#bgimg {
-  background-image: url("/assets/images/secondbg.jfif");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 78vw;
-  height: 100vh;
-  top: 100vh;
-  z-index: -1;
-  position: absolute;
-}
-.bgimg {
-  max-width: 100%;
-  height: auto;
-}
+
 .navbar {
   max-width: 100%;
   height: 56px;
@@ -142,6 +129,7 @@ a {
   width: 100%;
 }
 body {
+background-color:grey ;
 }
 #infoone.infocontainer {
   color: #fff;
@@ -204,4 +192,109 @@ margin-left: 30%;
   border-radius: 2px;
   width: 204px;
   height: 40px;
+}
+#nextbutton{
+  position: absolute;
+  bottom: 1vh;
+  width: 100vw;
+  text-align: center;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+}
+#nextbutton:hover{
+
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+/* PAGE 2 */
+#page2{
+  width: 100vw;
+  height: 100vh;
+  top: 100vh;
+  position: relative;
+}
+#bgimg {
+  background-image: url("/assets/images/secondbg.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 78vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  float: left;
+}
+#pg2txt{
+  width: 21.8vw;
+  height: 100vh;
+
+  float:right;
+  margin-right: 32px;
+  padding-left: 80px;
+
+
+}
+#pg2txt a{
+  color: black;
+}
+.t17txt{
+ font-size: 17px;
+}
+.safetytitle{
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+#learnmore{
+  float: left;
+  text-align: center;
+}
+#learnmore a{
+  text-decoration: none;
+}
+#learnmore img{
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 40px 40px;
+  border-radius: 50px;
+  border: 3px solid black;
+  float: left;
+}
+#learnmore span{
+float: right;
+padding-top: 10px;
+}
+#learnmore img:hover{
+  background-color: rgba(0, 0, 0, 1);
+  background-size: 40px 40px;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+
+.buynow2 button  {
+  color: black;
+  padding: 4px 24px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  width: 204px;
+  height: 40px;
+  float: right;
+}
+.buynow2 button:hover {
+  padding: 4px 24px;
+  border: 3px solid black;
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  width: 204px;
+  height: 40px;
+}
+.buttons{
+  margin-top: 40vh;
 }
