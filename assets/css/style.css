@@ -15,6 +15,7 @@
   font-weight: normal;
   font-style: normal;
   line-height: 20px;
+  z-index: 1;
 }
 html {
   scroll-behavior: smooth;
@@ -37,10 +38,10 @@ h3 {
   background-position: center;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
   position: absolute;
 }
-#background2{
+#background2 {
   background-color: #fff;
   width: 100vw;
   height: 100vh;
@@ -129,13 +130,13 @@ a {
   width: 100%;
 }
 body {
-background-color:grey ;
+  /* background-color:grey ; */
 }
 #infoone.infocontainer {
   color: #fff;
   width: 40%;
   height: 54px;
-margin-left: 30%;
+  margin-left: 30%;
 }
 .range {
   display: inline;
@@ -143,7 +144,6 @@ margin-left: 30%;
   margin-left: 78px;
 }
 .speed {
-  padding: 
   display: inline;
   float: left;
 }
@@ -174,7 +174,7 @@ margin-left: 30%;
   width: 100%;
 }
 
-.buynow button  {
+.buynow button {
   color: #fff;
   padding: 4px 24px;
   border: 3px solid white;
@@ -193,28 +193,35 @@ margin-left: 30%;
   width: 204px;
   height: 40px;
 }
-#nextbutton{
+#nextbutton {
   position: absolute;
   bottom: 1vh;
   width: 100vw;
   text-align: center;
-  -webkit-animation: mover 2s infinite  alternate;
-  animation: mover 2s infinite  alternate;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
 }
-#nextbutton:hover{
-
+#nextbutton:hover {
 }
 
 @-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 @keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 /* PAGE 2 */
-#page2{
+#page2 {
   width: 100vw;
   height: 100vh;
   top: 100vh;
@@ -227,56 +234,57 @@ margin-left: 30%;
   background-size: cover;
   width: 78vw;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   float: left;
 }
-#pg2txt{
+#pg2txt {
+  margin-top: -5.9vh;
   width: 21.8vw;
   height: 100vh;
-
-  float:right;
+  float: right;
   margin-right: 32px;
   padding-left: 80px;
-
-
+  padding-top: 60px;
+  top: 100vh;
 }
-#pg2txt a{
+#pg2txt a {
   color: black;
 }
-.t17txt{
- font-size: 17px;
+.t17txt {
+  font-size: 17px;
 }
-.safetytitle{
+.safetytitle {
   padding-top: 10px;
   padding-bottom: 25px;
 }
-#learnmore{
+#learnmore {
   float: left;
   text-align: center;
+  margin-right: 10px;
 }
-#learnmore a{
+#learnmore a {
   text-decoration: none;
 }
-#learnmore img{
+#learnmore img {
   background-color: rgba(0, 0, 0, 0);
   background-size: 40px 40px;
   border-radius: 50px;
   border: 3px solid black;
   float: left;
 }
-#learnmore span{
-float: right;
-padding-top: 10px;
+#learnmore span {
+  float: right;
+  padding-top: 10px;
 }
-#learnmore img:hover{
+#learnmore img:hover {
   background-color: rgba(0, 0, 0, 1);
   background-size: 40px 40px;
   border-radius: 50px;
   border: 3px solid black;
 }
 
-.buynow2 button  {
+.buynow2 button {
   color: black;
   padding: 4px 24px;
   border: 3px solid black;
@@ -284,7 +292,7 @@ padding-top: 10px;
   border-radius: 2px;
   width: 204px;
   height: 40px;
-  float: right;
+  float: left;
 }
 .buynow2 button:hover {
   padding: 4px 24px;
@@ -295,6 +303,75 @@ padding-top: 10px;
   width: 204px;
   height: 40px;
 }
-.buttons{
-  margin-top: 40vh;
+.buttons {
+  margin-top: 50vh;
+}
+
+/* page 3 */
+#page3 {
+  width: 100vw;
+  height: 100vh;
+  top: 100vh;
+  position: relative;
+}
+#bgimg3 {
+  background-image: url("/assets/images/thirdbg.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  z-index: 0;
+  position: absolute;
+  float: left;
+}
+#infoonetwo.infocontainertwo {
+  color: #fff;
+  width: 45vw;
+  height: 8.3vh;
+  margin-left: 27.5vw;
+}
+#infoonetwo {
+  text-align: center;
+  position: absolute;
+  bottom: 27vh;
+  width: 100%;
+}
+#infoonetwo.infocontainertwo .range {
+  margin-left: 24px;
+}
+#infoonetwo.infocontainertwo .motor {
+  margin-left: 24px;
+}
+#bottominfo {
+  height: 20vh;
+  width: 75vw;
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 12.5vw;
+}
+#buttonsbottom {
+  width: 25vw;
+  height: 14.5vh;
+  clear: both;
+  float: left;
+  padding: 16px 0;
+  margin-bottom: 40px;
+}
+#textbottom {
+  width: 34vw;
+  height: 14.5vh;
+  float: right;
+  padding: 16px 0;
+}
+
+.blacklink {
+  color: black;
+}
+.t17txt2 {
+  margin-bottom: 10px;
+}
+h2.acctitle {
+  margin-bottom: 24px;
 }
