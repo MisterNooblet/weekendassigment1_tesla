@@ -1,9 +1,76 @@
 @font-face {
-  font-family: "gothamssmmedium";
-  src: url("/assets/fonts/1742-font-webfont.woff2") format("woff2"),
-    url("/assets/fonts/1742-font-webfont.woff") format("woff");
-  font-weight: normal;
+  font-display: swap;
+  font-family: Gotham SSm;
   font-style: normal;
+  font-weight: 500;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Gotham SSm;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Gotham SSm;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Bold_Web.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Gotham SSm;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Light_Web.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Gotham SSm;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-XLight_Web.woff2)
+    format("woff2");
+}
+
+/* font_weight */
+.fw_2 {
+  font-family: Gotham SSm;
+  font-weight: 200;
+}
+
+.fw_3 {
+  font-family: gotham SSm;
+  font-weight: 300;
+}
+
+.fw_4 {
+  font-family: gotham SSm;
+  font-weight: 400;
+}
+
+.fw_5 {
+  font-family: gotham SSm;
+  font-weight: 500;
+}
+
+.fw_7 {
+  font-family: gotham SSm;
+  font-weight: 700;
+}
+
+.txt_deco {
+  text-decoration: none;
 }
 
 * {
@@ -11,7 +78,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 14px;
-  font-family: "gothamssmmedium", Arial, sans-serif;
+  font-family: "Gotham SSm";
   font-weight: normal;
   font-style: normal;
   line-height: 20px;
@@ -112,7 +179,7 @@ h3 {
 }
 .links ul li {
   float: left;
-  padding-right: 32px;
+  padding-right: 1.6vw;
 }
 .links ul li a {
   text-decoration: none;
@@ -141,7 +208,7 @@ body {
 .range {
   display: inline;
   float: left;
-  margin-left: 78px;
+  margin-left: 4vw;
 }
 .speed {
   display: inline;
@@ -150,12 +217,15 @@ body {
 .motor {
   display: inline;
   float: left;
-  margin-left: 78px;
+  margin-left: 4vw;
 }
 .speed img {
   display: inline;
 }
 .speed h2 {
+  display: inline;
+}
+.gaugesvg {
   display: inline;
 }
 .range h2 {
@@ -366,6 +436,41 @@ body {
   padding: 16px 0;
 }
 
+#sidescroller {
+  height: 10vh;
+  position: fixed;
+  top: 35vh;
+  left: 22px;
+  z-index: 2;
+}
+
+#sidescroller ul {
+  list-style: url("/assets/images/icons/Rectangle1.svg");
+}
+
+#sidescroller ul a {
+  color: white;
+  text-decoration: none;
+}
+#sidescroller ul a li {
+  font-size: 10px;
+}
+
+#sidescroller ul a li .sidenavtxt {
+  font-size: 10px;
+  opacity: 0;
+  margin-bottom: 10px;
+}
+#sidescroller ul a li .sidenavtxt:hover {
+  font-size: 10px;
+  opacity: 100%;
+}
+.sidenavdiv {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  left: 0;
+}
 .blacklink {
   color: black;
 }
@@ -375,3 +480,5 @@ body {
 h2.acctitle {
   margin-bottom: 24px;
 }
+
+/* test */
