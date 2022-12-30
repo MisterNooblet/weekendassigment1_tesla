@@ -85,7 +85,7 @@
   z-index: 1;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 .clear {
   clear: both;
@@ -199,6 +199,11 @@ a {
 body {
   /* background-color:grey ; */
 }
+
+.snap {
+  scroll-snap-align: start;
+}
+
 #infoone.infocontainer {
   color: #fff;
   width: 40%;
