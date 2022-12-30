@@ -85,7 +85,7 @@
   z-index: 1;
 }
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 .clear {
   clear: both;
@@ -116,10 +116,6 @@ h3 {
   position: absolute;
 }
 
-.navbar {
-  max-width: 100%;
-  height: 56px;
-}
 .logo {
   width: 33.9%;
   height: 56px;
@@ -450,7 +446,8 @@ body {
 }
 
 #sidescroller ul {
-  list-style: url("/assets/images/icons/Rectangle1.svg");
+  /* list-style: url("/assets/images/icons/Rectangle1.svg"); */
+  list-style: none;
 }
 
 #sidescroller ul a {
@@ -486,4 +483,15 @@ h2.acctitle {
   margin-bottom: 24px;
 }
 
+#uparrow {
+  z-index: 2;
+  position: fixed;
+  top: 1vh;
+  right: 1vw;
+  display: block;
+}
+#uparrow img {
+  width: 24px;
+  height: auto;
+}
 /* test */
