@@ -511,4 +511,28 @@ h2.acctitle {
   height: auto;
   cursor: pointer;
 }
+
+#page2lines {
+  position: absolute;
+  z-index: 2;
+}
+
+#topleftline {
+  position: absolute;
+  right: 70vw;
+  bottom: 50vh;
+}
+.toptxt {
+  float: right;
+}
+#toprightline {
+  position: absolute;
+  right: 55vw;
+  bottom: 71.5vh;
+}
+#bottomline {
+  position: absolute;
+  bottom: 17vh;
+  right: 50vw;
+}
 /* test */
