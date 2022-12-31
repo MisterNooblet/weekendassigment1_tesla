@@ -521,6 +521,15 @@ h2.acctitle {
   position: absolute;
   right: 70vw;
   bottom: 50vh;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#topleftline.fade {
+  opacity: 1;
 }
 .toptxt {
   float: right;
@@ -529,10 +538,28 @@ h2.acctitle {
   position: absolute;
   right: 55vw;
   bottom: 71.5vh;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#toprightline.fade {
+  opacity: 1;
 }
 #bottomline {
   position: absolute;
   bottom: 17vh;
   right: 50vw;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#bottomline.fade {
+  opacity: 1;
 }
 /* test */

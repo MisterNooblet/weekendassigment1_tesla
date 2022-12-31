@@ -1,4 +1,7 @@
 const links = document.querySelectorAll(".sidenavtxt");
+const topleftline = document.getElementById("topleftline");
+const toprightline = document.getElementById("toprightline");
+const bottomline = document.getElementById("bottomline");
 
 window.onscroll = function () {
   if (window.pageYOffset > 1) {
@@ -7,16 +10,28 @@ window.onscroll = function () {
   if (window.pageYOffset < 600 && window.pageYOffset >= 0) {
     console.log("test");
     document.getElementById("uparrow").style.opacity = 0;
+    document.getElementById("topleftline").style.opacity = 0;
+    document.getElementById("toprightline").style.opacity = 0;
+    document.getElementById("bottomline").style.opacity = 0;
     updatelist("white");
   }
   //page-2
   if (window.pageYOffset < 1300 && window.pageYOffset > 700) {
     document.getElementById("uparrow").style.opacity = 100;
+    document.getElementById("topleftline").style.opacity = 100;
+    document.getElementById("toprightline").style.opacity = 100;
+    document.getElementById("bottomline").style.opacity = 100;
     updatelist("black");
+    topleftline.classList.toggle("fade");
+    toprightline.classList.toggle("fade");
+    bottomline.classList.toggle("fade");
   }
   //page-3
   if (window.pageYOffset > 1300 && window.pageYOffset < 2500) {
     updatelist("white");
+    document.getElementById("topleftline").style.opacity = 0;
+    document.getElementById("toprightline").style.opacity = 0;
+    document.getElementById("bottomline").style.opacity = 0;
   }
 };
 
