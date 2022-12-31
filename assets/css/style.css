@@ -199,6 +199,11 @@ body {
 .snap {
   scroll-snap-align: start;
 }
+.gaugewrap {
+  width: 40px;
+  height: 29px;
+  display: inline;
+}
 
 #infoone.infocontainer {
   color: #fff;
@@ -254,6 +259,7 @@ body {
   width: 204px;
   height: 40px;
   float: right;
+  cursor: pointer;
 }
 .buynow button:hover {
   padding: 4px 24px;
@@ -373,6 +379,7 @@ body {
   border-radius: 2px;
   width: 204px;
   height: 40px;
+  cursor: pointer;
 }
 .buttons {
   margin-top: 50vh;
@@ -421,9 +428,10 @@ body {
   position: absolute;
   bottom: 0px;
   margin-left: 12.5vw;
+  padding: 0 10vw;
 }
 #buttonsbottom {
-  width: 25vw;
+  width: 20vw;
   height: 14.5vh;
   clear: both;
   float: left;
@@ -501,5 +509,6 @@ h2.acctitle {
   z-index: 2;
   width: 57px;
   height: auto;
+  cursor: pointer;
 }
 /* test */
