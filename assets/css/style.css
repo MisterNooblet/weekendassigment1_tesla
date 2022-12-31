@@ -85,7 +85,7 @@
   z-index: 1;
 }
 html {
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 }
 .clear {
   clear: both;
