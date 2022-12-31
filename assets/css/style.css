@@ -494,4 +494,12 @@ h2.acctitle {
   width: 24px;
   height: auto;
 }
+#accecibility {
+  position: fixed;
+  right: 2vw;
+  bottom: 7.5vh;
+  z-index: 2;
+  width: 57px;
+  height: auto;
+}
 /* test */
